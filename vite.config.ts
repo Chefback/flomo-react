@@ -12,8 +12,8 @@ export default defineConfig(({ command, mode }) => {
         plugins: [
             react(),
             sentryVitePlugin({
-                org: 'chefback ',
-                project: 'flomo-react',
+                org: process.env.SENTRY_ORG,
+                project: process.env.SENTRY_PROJECT,
                 ignore: ['node_modules'],
                 urlPrefix: '~/flomo',
                 include: './dist',
