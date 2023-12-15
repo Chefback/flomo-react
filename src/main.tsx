@@ -11,7 +11,7 @@ import './styles/reset.less'
 import './styles/index.css'
 
 Sentry.init({
-    dsn: 'https://96830828c7c14c03a429f93e3b4d7ab5@o635537.ingest.sentry.io/4504661680193536',
+    dsn: 'https://f58c7ae9a41ba3eb080b01dc09f76948@o4506399708807168.ingest.sentry.io/4506399711428608',
     integrations: [new BrowserTracing()],
     tracesSampleRate: 1.0
 })

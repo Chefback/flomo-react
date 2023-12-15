@@ -12,12 +12,13 @@ export default defineConfig(({ command, mode }) => {
         plugins: [
             react(),
             sentryVitePlugin({
-                org: 'kffhi-f2e',
+                org: 'chefback ',
                 project: 'flomo-react',
                 ignore: ['node_modules'],
                 urlPrefix: '~/flomo',
                 include: './dist',
-                release: '1.0'
+                release: '1.0',
+                authToken: process.env.SENTRY_AUTH_TOKEN
             })
         ],
         resolve: {
